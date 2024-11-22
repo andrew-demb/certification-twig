@@ -101,7 +101,7 @@ entities:
       - {value: '["aa", "bb", "cb"]', correct: true}
     help: 'https://twig.symfony.com/doc/3.x/filters/split.html'
   -
-    question: 'What is the output of this {{ "one,two,three,four,five"|split(',', 3) }} ?'
+    question: 'What is the output of this {{ "one,two,three,four,five"|split(",", 3) }} ?'
     answers:
       - {value: '["one", "two", "thre", "efo", "urf", "ive"]', correct: true}
       - {value: '["one", "two", "three,four,five"]', correct: true}
@@ -373,7 +373,7 @@ entities:
       - {value: 'html_attr', correct: true}
     help: 'https://twig.symfony.com/doc/3.x/filters/escape.html'
   -
-    question: 'What renders this code: {% set sizes = [34, 36, 38, 40, 42] %}{{ sizes|filter(v => v > 38)|join(', ') }}'
+    question: 'What renders this code: {% set sizes = [34, 36, 38, 40, 42] %}{{ sizes|filter(v => v > 38)|join(", ") }}'
     answers:
       - {value: '34, 36', correct: false}
       - {value: '38', correct: false}
